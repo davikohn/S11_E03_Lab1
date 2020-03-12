@@ -1,12 +1,13 @@
 Lab1.pbi: \
-  C:\Users\Davi\ Kohn\Desktop\Davi\Sistemas\ Embarcados\2020\EK-TM4C1294_IAR8\Projects\S11_E03_Lab1\..\..\TivaWare_C_Series-2.1.4.178\driverlib\systick.h \
-  C:\Users\Davi\ Kohn\Desktop\Davi\Sistemas\ Embarcados\2020\EK-TM4C1294_IAR8\Projects\S11_E03_Lab1\..\..\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h \
-  C:\Users\Davi\ Kohn\Desktop\Davi\Sistemas\ Embarcados\2020\EK-TM4C1294_IAR8\Projects\S11_E03_Lab1\..\..\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h \
-  C:\Users\Davi\ Kohn\Desktop\Davi\Sistemas\ Embarcados\2020\EK-TM4C1294_IAR8\Projects\S11_E03_Lab1\..\..\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdbool.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
-  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
+  C:\Users\Davi\ Kohn\Desktop\Davi\Sistemas\ Embarcados\2020\EK-TM4C1294_IAR8\Projects\S11_E03_Lab1\src\Lab1.c \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdint.h \
-  C:\Users\Davi\ Kohn\Desktop\Davi\Sistemas\ Embarcados\2020\EK-TM4C1294_IAR8\Projects\S11_E03_Lab1\src\Lab1.c
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Defaults.h \
+  C:\\Program\ Files\ (x86)\\IAR\ Systems\\Embedded\ Workbench\ 8.3\\arm\\inc\\c\\DLib_Config_Normal.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\arm\inc\c\stdbool.h \
+  C:\Users\Davi\ Kohn\Desktop\Davi\Sistemas\ Embarcados\2020\EK-TM4C1294_IAR8\Projects\S11_E03_Lab1\..\..\TivaWare_C_Series-2.1.4.178\inc/hw_memmap.h \
+  C:\Users\Davi\ Kohn\Desktop\Davi\Sistemas\ Embarcados\2020\EK-TM4C1294_IAR8\Projects\S11_E03_Lab1\..\..\TivaWare_C_Series-2.1.4.178\driverlib/gpio.h \
+  C:\Users\Davi\ Kohn\Desktop\Davi\Sistemas\ Embarcados\2020\EK-TM4C1294_IAR8\Projects\S11_E03_Lab1\..\..\TivaWare_C_Series-2.1.4.178\driverlib/sysctl.h \
+  C:\Users\Davi\ Kohn\Desktop\Davi\Sistemas\ Embarcados\2020\EK-TM4C1294_IAR8\Projects\S11_E03_Lab1\..\..\TivaWare_C_Series-2.1.4.178\driverlib/systick.h

@@ -2,8 +2,8 @@
 //INTEGRANTES DA EQUIPE:                                                        //
 //ALEXANDRE SCHROEDER                                                           //        
 //DAVI SCHULT KOHN                                                              //
-//                                                                              //
 //******************************************************************************//
+
 #include <stdint.h>
 #include <stdbool.h>
 // includes da biblioteca driverlib
@@ -14,15 +14,15 @@
 
 uint8_t LED_D1 = 0;
 
-void SysTick_Handler(void)
-{
-  LED_D1 ^= GPIO_PIN_1; // Troca estado do LED D1
-  GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, LED_D1); // Acende ou apaga LED D1
-} // SysTick_Handler
+//void SysTick_Handler(void)
+//{
+//  LED_D1 ^= GPIO_PIN_1; // Troca estado do LED D1
+//  GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_1, LED_D1); // Acende ou apaga LED D1
+//} // SysTick_Handler
 
 void main(void)
 {
-  SysTickPeriodSet(24000000); // f = 1Hz para clock = 24MHz
+  //SysTickPeriodSet(24000000); // f = 1Hz para clock = 24MHz
   //
   SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION); // Habilita GPIO N (LED D1 = PN1, LED D2 = PN0)
   while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPION)); // Aguarda final da habilitação
@@ -44,18 +44,23 @@ void main(void)
   GPIOPinTypeGPIOInput(GPIO_PORTJ_BASE, GPIO_PIN_0 | GPIO_PIN_1); // push-buttons SW1 e SW2 como entrada
   GPIOPadConfigSet(GPIO_PORTJ_BASE, GPIO_PIN_0 | GPIO_PIN_1, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
 
-  SysTickIntEnable();
-  SysTickEnable();
+  //SysTickIntEnable();
+  //SysTickEnable();
 
   while(1){
     if(GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_0) == GPIO_PIN_0) // Testa estado do push-button SW1
-      GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, 0); // Apaga LED D3
+      //GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, 0); // Apaga LED D3
+      //DO NOTHING
     else
-      GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, GPIO_PIN_4); // Acende LED D3
-
+      //GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_4, GPIO_PIN_4); // Acende LED D3
+      //DIMINUI PWM
+      
     if(GPIOPinRead(GPIO_PORTJ_BASE, GPIO_PIN_1) == GPIO_PIN_1) // Testa estado do push-button SW2
-      GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 0); // Apaga LED D4
+      //GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 0); // Apaga LED D4
+      //DO NOTHING
     else
       GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, GPIO_PIN_0); // Acende LED D4
+      //AUMENTA PWM
+    
   } // while
 } // main
