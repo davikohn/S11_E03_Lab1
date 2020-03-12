@@ -1,3 +1,9 @@
+//******************************************************************************//
+//INTEGRANTES DA EQUIPE:                                                        //
+//ALEXANDRE SCHROEDER                                                           //        
+//DAVI SCHULT KOHN                                                              //
+//                                                                              //
+//******************************************************************************//
 #include <stdint.h>
 #include <stdbool.h>
 // includes da biblioteca driverlib
@@ -17,7 +23,7 @@ void SysTick_Handler(void)
 void main(void)
 {
   SysTickPeriodSet(24000000); // f = 1Hz para clock = 24MHz
-  
+  //
   SysCtlPeripheralEnable(SYSCTL_PERIPH_GPION); // Habilita GPIO N (LED D1 = PN1, LED D2 = PN0)
   while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPION)); // Aguarda final da habilitação
   
